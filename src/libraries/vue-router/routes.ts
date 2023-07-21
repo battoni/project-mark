@@ -1,3 +1,3 @@
-// import {} from '@Views';
+import { HomeViewRoutes } from '@Views';
 
-export default [];
+export default [...HomeViewRoutes];
