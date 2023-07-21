@@ -1,28 +1,36 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import { UI_COLORS } from '@Types';
 import { FONTS_ENUM, TAGS_ENUM } from './types';
 
 interface Props {
-  tag?: TAGS_ENUM;
+  color?: UI_COLORS;
   font?: FONTS_ENUM;
   size?: string;
+  tag?: TAGS_ENUM;
 }
 
-const props = defineProps<Props>();
+const props = withDefaults(defineProps<Props>(), {
+  color: UI_COLORS.DEFAULT,
+  font: FONTS_ENUM.BODY,
+  size: 'text-base',
+  tag: TAGS_ENUM.P,
+});
 
 const classes = computed(() => {
-  const defaultTextClass = props.size ?? 'text-default';
-  const defaultTextFont = props.font ?? FONTS_ENUM.BODY;
+  const { color, font, size } = props;
 
-  return ['text', defaultTextClass, defaultTextFont];
+  return [`text-${color}`, font, size];
 });
 </script>
 
 <template>
   <component
     :is="tag ?? 'p'"
-    :class="classes"
+    :class="[...classes]"
   >
+    {{ color }}
+
     <slot />
   </component>
 </template>
@@ -39,9 +47,6 @@ const classes = computed(() => {
 }
 .text-regular {
   @apply text-lg;
-}
-.text-default {
-  @apply text-base;
 }
 .text-small {
   @apply text-sm;

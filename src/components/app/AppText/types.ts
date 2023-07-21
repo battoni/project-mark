@@ -1,3 +1,5 @@
+import { UI_COLORS } from '@Types';
+
 enum TAGS_ENUM {
   H1 = 'h1',
   H2 = 'h2',
@@ -15,6 +17,7 @@ enum FONTS_ENUM {
 const AppTextProps = {
   FONTS_ENUM,
   TAGS_ENUM,
+  UI_COLORS,
 };
 
 export { AppTextProps, FONTS_ENUM, TAGS_ENUM };
