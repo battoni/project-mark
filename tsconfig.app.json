@@ -26,7 +26,7 @@
       "@Libraries": ["./src/libraries"],
       "@Plugins": ["./src/plugins"],
       "@Styles/*": ["./src/styles/*"],
-      "@Types": ["./src/Types"],
+      "@Types": ["./src/types"],
       "@Views": ["./src/views"]
     }
   }
