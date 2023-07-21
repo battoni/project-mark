@@ -1,14 +1,12 @@
-import './assets/main.css';
-
 import { createApp } from 'vue';
-import { createPinia } from 'pinia';
-
+import Libraries from '@Libraries';
+import Plugins from '@Plugins';
+import '@Styles/main.css';
 import App from './App.vue';
-import router from './router';
 
 const app = createApp(App);
 
-app.use(createPinia());
-app.use(router);
+Libraries.forEach((lib) => app.use(lib));
+Plugins.forEach((plugin) => app.use(plugin));
 
 app.mount('#app');
