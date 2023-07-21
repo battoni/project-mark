@@ -1,0 +1,33 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "es2017",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@Assets/*": ["./src/assets/*"],
+      "@AppUi": ["./src/components/app"],
+      "@BaseUi": ["./src/components/base"],
+      "@ComposedUi": ["./src/components/composed"],
+      "@Composables": ["./src/composables"],
+      "@Helpers": ["./src/helpers"],
+      "@Layouts": ["./src/layouts"],
+      "@Libraries": ["./src/libraries"],
+      "@Plugins": ["./src/plugins"],
+      "@Styles/*": ["./src/styles/*"],
+      "@Types": ["./src/Types"],
+      "@Views": ["./src/views"]
+    }
+  }
+}
