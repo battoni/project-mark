@@ -1,19 +1,47 @@
 :root {
-  --color-green: #dfffba;
-  --color-green-bold: #123411;
-  --color-gray-1: #fafafa;
-  --color-gray-2: #cdcccc;
-  --color-gray-3: #676767;
+  --color-ice-1: #e2e8f0;
+  --color-ice-2: #edf2f7;
+  --color-ice-3: #cbd5e0;
+  --color-ice-4: #bfcfe0;
+
   --color-white: #ffffff;
-  --color-black: #212121;
-  --color-red-1: #e43e3e;
 
-  --color-inactive-green: #12341175;
-  --color-inactive-red-1: #e43e3e2e;
-  --color-inactive-red-2: #e43e3e2e;
-  --color-inactive-gray-1: #cdcccc38;
-  --color-inactive-gray-2: #cdcccc2b;
+  --color-blue-1: #2462d1;
+  --color-blue-2: #2d3748;
+  --color-blue-inactive: #2462d170;
 
-  --sidenav-width: 200px;
-  --navbar-width: calc(100% - var(--sidenav-width) - 60px);
+  --color-purple-1: #f7f1ff;
+  --color-purple-2: #e9d9ff;
+  --color-purple-3: #dabfff;
+  --color-purple-4: #46426d;
+
+  --color-orange-1: #fef6ef;
+  --color-orange-2: #ffe4cc;
+  --color-orange-3: #ffd6b3;
+  --color-orange-4: #66421f;
+  --color-orange-5: #cc741f;
+  --color-orange-inactive: #cc741f91;
+
+  --color-sky-1: #e6f4ff;
+  --color-sky-2: #bfe3ff;
+  --color-sky-3: #99d1ff;
+  --color-sky-4: #003a66;
+
+  --color-green-1: #def5f7;
+  --color-green-2: #aaecf2;
+  --color-green-3: #81dde5;
+  --color-green-4: #2a5154;
+
+  --color-pink-1: #fff2f6;
+  --color-pink-2: #ffd9e4;
+  --color-pink-3: #ffbfd2;
+  --color-pink-4: #773a47;
+  --color-pink-5: #ce2255;
+  --color-pink-inactive: #ce225582;
+
+  --color-gray-1: #f2f7fa;
+  --color-gray-2: #e2e8f0;
+  --color-gray-3: #cbd5e0;
+  --color-gray-4: #4a5568;
+  --color-gray-inactive: #cbd5e087;
 }
