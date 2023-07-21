@@ -67,6 +67,7 @@ const dynamicClasses = computed(() => {
     max-w-[180px]
     rounded 
     text-[18px]
+    text-white
     transition-[box-shadow]
     transition-[transform];
 }
@@ -85,7 +86,7 @@ const dynamicClasses = computed(() => {
 }
 
 .btn-error {
-  @apply bg-background-error border-border-error text-white;
+  @apply bg-background-error border-border-error;
 }
 
 .btn-warning {
@@ -93,7 +94,7 @@ const dynamicClasses = computed(() => {
 }
 
 .btn-information {
-  @apply bg-background-information;
+  @apply bg-background-information border-border-information text-[var(--color-blue-2)];
 }
 
 .btn.outset {
@@ -111,26 +112,26 @@ const dynamicClasses = computed(() => {
 }
 
 .btn-success:disabled {
-  @apply bg-background-success-inactive 
-    border-border-success-inactive 
-    text-text-inactive;
+  @apply bg-background-successInactive 
+    border-border-successInactive 
+    text-successInactive;
 }
 
 .btn-error:disabled {
-  @apply bg-background-error-inactive 
-    border-border-error-inactive 
-    text-text-inactive;
+  @apply bg-background-errorInactive 
+    border-border-errorInactive 
+    text-errorInactive;
 }
 
 .btn-warning:disabled {
-  @apply bg-background-warning-inactive 
-    border-border-warning-inactive 
-    text-text-inactive;
+  @apply bg-background-warningInactive 
+    border-border-warningInactive 
+    text-warningInactive;
 }
 
 .btn-information:disabled {
-  @apply bg-background-information-inactive 
-    border-border-warning-inactive 
-    text-text-inactive;
+  @apply bg-background-informationInactive 
+    border-border-warningInactive 
+    text-inactive;
 }
 </style>
