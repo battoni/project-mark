@@ -25,7 +25,7 @@ function getColor(color: string, type: string) {
     <div
       v-for="{ id, label, color } in columns"
       class="column"
-      :key="id"
+      :key="`${id}_${label}`"
       :style="getColor(color, 'bg')"
     >
       <AppText
