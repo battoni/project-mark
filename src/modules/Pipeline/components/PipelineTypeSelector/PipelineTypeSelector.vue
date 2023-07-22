@@ -63,7 +63,7 @@ const selectedOption = computed({
 
 <style scoped>
 .pipeline-selectors {
-  @apply flex gap-3;
+  @apply flex flex-col gap-3;
 }
 
 .pipeline-option {
@@ -135,5 +135,11 @@ const selectedOption = computed({
 
 .check {
   @apply fill-white text-[14px];
+}
+
+@media (min-width: 992px) {
+  .pipeline-selectors {
+    @apply flex-row;
+  }
 }
 </style>

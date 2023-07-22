@@ -36,7 +36,7 @@ withDefaults(defineProps<Props>(), {
     </div>
 
     <AppButton
-      class="mr-10"
+      class="next"
       label="Next"
       :type="$AppButtonProps.TYPES_ENUM.SUCCESS"
       @click="emit('nextStep')"
@@ -46,10 +46,24 @@ withDefaults(defineProps<Props>(), {
 
 <style scoped>
 .new-pipeline-header {
-  @apply flex items-center justify-between pb-[25px] pt-[25px] w-full;
+  @apply flex flex-col items-center justify-between pb-[25px] pt-[25px] w-full;
 }
 
 .steps {
-  @apply flex gap-14 items-center justify-between;
+  @apply flex gap-14 items-center justify-between mt-5 mb-5 text-center;
+}
+
+@media (min-width: 768px) {
+  .new-pipeline-header {
+    @apply flex-row;
+  }
+
+  .steps {
+    @apply m-0;
+  }
+
+  .next {
+    @apply mr-10;
+  }
 }
 </style>

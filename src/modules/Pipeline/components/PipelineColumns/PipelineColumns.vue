@@ -5,13 +5,6 @@ interface Props {
   columns: PipelineColum[];
 }
 
-interface ColumnColorScale {
-  bg: string;
-  border: string;
-  tag: string;
-  tagInner: string;
-  text: string;
-}
 defineProps<Props>();
 
 function getColor(color: string, type: string) {
@@ -74,7 +67,7 @@ function getColor(color: string, type: string) {
 
 <style scoped>
 .columns {
-  @apply flex flex-row gap-4;
+  @apply flex flex-col gap-4;
 }
 .column {
   @apply flex
@@ -122,5 +115,17 @@ function getColor(color: string, type: string) {
 
 .content {
   @apply border border-[var(--color-purple-2)] h-[200px] rounded-[20px] w-full;
+}
+
+@media (min-width: 992px) {
+  .columns {
+    @apply flex-row max-w-[80%] overflow-x-scroll;
+  }
+}
+
+@media (min-width: 1640px) {
+  .columns {
+    @apply flex-row;
+  }
 }
 </style>

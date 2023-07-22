@@ -165,7 +165,7 @@ const selectedColumns = computed(
 
 <style scoped>
 .new-pipeline-view {
-  @apply bg-background-default min-h-full h-full p-5 w-full;
+  @apply bg-background-default min-h-full p-5 w-full;
 }
 
 .pipeline-selector {
@@ -175,7 +175,6 @@ const selectedColumns = computed(
     h-full
     items-center
     justify-start
-    max-h-[calc(100%_-_var(--new-pipeline-bottom-main))]
     p-10
     rounded-[20px]
     text-center
