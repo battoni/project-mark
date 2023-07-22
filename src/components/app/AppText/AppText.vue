@@ -26,11 +26,9 @@ const classes = computed(() => {
 
 <template>
   <component
-    :is="tag ?? 'p'"
+    :is="tag"
     :class="[...classes]"
   >
-    {{ color }}
-
     <slot />
   </component>
 </template>
