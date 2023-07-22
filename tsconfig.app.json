@@ -24,6 +24,7 @@
       "@Helpers": ["./src/helpers"],
       "@Layouts": ["./src/layouts"],
       "@Libraries": ["./src/libraries"],
+      "@PipelineModule": ["./src/modules/Pipeline"],
       "@Plugins": ["./src/plugins"],
       "@Styles/*": ["./src/styles/*"],
       "@Types": ["./src/types"],

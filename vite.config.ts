@@ -28,6 +28,10 @@ export default defineConfig({
       '@ComposedUi': fileURLToPath(
         new URL('./src/components/composed', import.meta.url)
       ),
+
+      '@PipelineModule': fileURLToPath(
+        new URL('./src/modules/Pipeline', import.meta.url)
+      ),
     },
   },
   test: {
