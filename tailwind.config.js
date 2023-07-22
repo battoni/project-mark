@@ -8,7 +8,7 @@ export default {
     extend: {
       colors: {
         background: {
-          default: 'var(--color-ice-1)',
+          default: 'var(--color-ice-2)',
           strong: 'var(--color-ice-1)',
 
           error: 'var(--color-pink-5)',
@@ -21,23 +21,23 @@ export default {
           warningInactive: 'var(--color-orange-inactive)',
 
           blue: 'var(--color-blue-1)',
-          'blue-strong': 'var(--color-blue-2)',
+          blueStrong: 'var(--color-blue-2)',
           gray: 'var(--color-gray-2)',
-          'gray-strong': 'var(--color-gray-3)',
+          grayStrong: 'var(--color-gray-3)',
           green: 'var(--color-green-2)',
-          'green-strong': 'var(--color-green-3)',
+          greenStrong: 'var(--color-green-3)',
           orange: 'var(--color-orange-2)',
-          'orange-strong': 'var(--color-orange-3)',
+          orangeStrong: 'var(--color-orange-3)',
           pink: 'var(--color-pink-2)',
-          'pink-strong': 'var(--color-pink-3)',
+          pinkStrong: 'var(--color-pink-3)',
           purple: 'var(--color-purple-2)',
-          'purple-strong': 'var(--color-purple-3)',
+          purpleStrong: 'var(--color-purple-3)',
           sky: 'var(--color-sky-2)',
-          'sky-strong': 'var(--color-sky-3)',
+          skyStrong: 'var(--color-sky-3)',
           white: 'var(--color-white)',
         },
         border: {
-          default: 'var(--color-ice-1)',
+          default: 'var(--color-ice-2)',
           strong: 'var(--color-ice-3)',
 
           error: 'var(--color-pink-5)',
