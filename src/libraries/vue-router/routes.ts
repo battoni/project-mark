@@ -1,3 +1,3 @@
-import { HomeViewRoutes } from '@Views';
+import { HomeViewRoutes, NewPipelineViewRoutes } from '@Views';
 
-export default [...HomeViewRoutes];
+export default [...HomeViewRoutes, ...NewPipelineViewRoutes];
