@@ -5,18 +5,36 @@ interface Props {
   columns: PipelineColum[];
 }
 
+interface ColumnColorScale {
+  bg: string;
+  border: string;
+  tag: string;
+  tagInner: string;
+  text: string;
+}
 defineProps<Props>();
 
 function getColor(color: string, type: string) {
-  const scale = {
-    bg: `background-color: var(--color-${color}-1)`,
-    border: `border-color: var(--color-${color}-2)`,
-    tag: `background-color: var(--color-${color}-2)`,
-    tagInner: `background-color: var(--color-${color}-3)`,
-    text: `color: var(--color-${color}-4)`,
-  };
+  let result;
 
-  return scale[type];
+  switch (type) {
+    case 'bg':
+      result = `background-color: var(--color-${color}-1)`;
+      break;
+    case 'border':
+      result = `border-color: var(--color-${color}-2)`;
+      break;
+    case 'tag':
+      result = `background-color: var(--color-${color}-2)`;
+      break;
+    case 'tagInner':
+      result = `background-color: var(--color-${color}-3)`;
+      break;
+    default:
+      result = `color: var(--color-${color}-4)`;
+  }
+
+  return result;
 }
 </script>
 
