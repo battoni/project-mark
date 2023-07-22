@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import CheckSvg from '@Assets/svgs/check.svg';
 import { styleFromStateHelper } from '@Helpers';
 import type { PipelineOption } from '../../types';
 
@@ -34,7 +35,9 @@ const selectedOption = computed({
       <label
         class="pipeline-radio"
         :for="label"
-      />
+      >
+        <CheckSvg class="check" />
+      </label>
 
       <div class="arrow" />
 
@@ -86,6 +89,10 @@ const selectedOption = computed({
   @apply border-2 border-border-success bg-background-success;
 }
 
+.pipeline-option.is-active .check {
+  @apply flex;
+}
+
 .pipeline-option.is-active .arrow {
   @apply absolute bg-background-white
     block
@@ -110,7 +117,10 @@ const selectedOption = computed({
   @apply bg-background-white
     border-[3px]
     border-border-gray
+    flex
     h-[18px]
+    items-center
+    justify-center
     rounded-[5px]
     w-[18px];
 }
@@ -121,5 +131,9 @@ const selectedOption = computed({
 
 .arrow {
   @apply hidden;
+}
+
+.check {
+  @apply fill-white text-[14px];
 }
 </style>
