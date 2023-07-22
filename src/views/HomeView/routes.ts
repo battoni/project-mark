@@ -4,4 +4,9 @@ export default [
     name: 'home',
     component: () => import('@/views/HomeView/HomeView.vue'),
   },
+  {
+    path: '/',
+    name: 'root',
+    component: () => import('@/views/HomeView/HomeView.vue'),
+  },
 ];
