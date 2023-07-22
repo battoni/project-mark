@@ -60,13 +60,13 @@ const dynamicClasses = computed(() => {
     duration-[100ms]
     flex
     font-medium 
-    h-[55px]
+    h-[45px]
     items-center
     justify-center
-    min-w-[160px]
-    max-w-[180px]
-    rounded 
-    text-[18px]
+    min-w-[85px]
+    max-w-[170px]
+    rounded-[20px]
+    text-[16px]
     text-white
     transition-[box-shadow]
     transition-[transform];
