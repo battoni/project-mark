@@ -2,17 +2,17 @@
 
 ## Important links
 
-- [Live Preview]()
+- [Live Preview](https://project-mark.vercel.app/)
 
-- [Storybook]()
+- [Storybook](https://project-mark-stories.vercel.app/)
 
-- [Doccumentation]()
+- [Doccumentation](https://project-mark-docs.vercel.app/)
 
-- [About me]()
+- [About me](https://project-mark-docs/about-me)
 
-- [Architecture]()
+- [Architecture](https://project-mark-docs/architecture)
 
-- [How to use]()
+- [How to use](https://project-mark-docs/features)
 
 ## Recommended IDE Setup
 
@@ -99,4 +99,4 @@ npm run story:build
 npm run docs:build
 ```
 
-See [`package.json`](https://github.com/battoni/world-groccer/blob/main/package.json) scripts section for more.
+See [`package.json`](https://github.com/battoni/project-mark/blob/main/package.json) scripts section for more.
