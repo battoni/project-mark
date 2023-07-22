@@ -44,4 +44,7 @@
   --color-gray-3: #cbd5e0;
   --color-gray-4: #4a5568;
   --color-gray-inactive: #cbd5e087;
+
+  --topnav-height: 182px;
+  --new-pipeline-bottom-main: 131px;
 }
